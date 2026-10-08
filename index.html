@@ -3,9 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Coworking</title>
+    <title>Vanguarda | Arquitetura & Design de Interiores</title>
+    <!-- Vinculação ao arquivo externo style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho (Logo, Marca, Menu de 4 Links e Botão de Ação) -->
+    <header class="header-fixo">
+        <div class="logo-container">
+            <img src="imagens/logo-vanguarda.jpg" alt="Logo Vanguarda Arquitetura" class="logo">
+            <span class="nome-marca">VANGUARDA ARQUITETURA</span>
+        </div>
+        
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#agendamento" class="btn-header">SOLICITAR ORÇAMENTO</a>
+    </header>
+
+    <main>
+        <!-- Destaque / Hero (Imagem topo, H1, Parágrafo e Botão) -->
+        <section id="inicio" class="hero-secao">
+            <div class="hero-imagem-wrapper">
+                <img src="imagens/foto-1.jpg" alt="Projeto residencial moderno com iluminação natural e conceito aberto" class="hero-img">
+            </div>
+            <div class="hero-conteudo">
+                <h1>PROJETOS ARQUITETÔNICOS QUE TRANSFORMAM SEU ESTILO DE VIDA</h1>
+                <p>Criamos ambientes funcionais, sofisticados e personalizados para residências e espaços comerciais em todo o Brasil.</p>
+                <a href="#pacotes" class="btn-hero">VER PACOTES</a>
+            </div>
+        </section>
+
+        <!-- Seção 1: NOSSOS SERVIÇOS (3 Cards com Imagem + Texto + Botão) -->
+        <section id="servicos" class="secao-servicos">
+            <h2 class="titulo-secao">NOSSOS SERVIÇOS</h2>
+            <div class="grid-servicos">
+                
+                <!-- Card 1 -->
+                <article class="card-servico">
+                    <div class="card-img-container">
+                        <img src="imagens/foto-2.jpg" alt="Fachada de casa residencial moderna" class="card-img">
+                    </div>
+                    <div class="card-info">
+                        <h3>PROJETO RESIDENCIAL</h3>
+                        <p>Planejamento completo do zero, desde a concepção estrutural até o detalhamento executivo.</p>
+                        <a href="#agendamento" class="btn-card">Saber Mais</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-servico">
+                    <div class="card-img-container">
+                        <img src="imagens/foto-3.jpg" alt="Design de interiores elegante de sala de estar" class="card-img">
+                    </div>
+                    <div class="card-info">
+                        <h3>DESIGN DE INTERIORES</h3>
+                        <p>Harmonização de ambientes, escolha do mobiliário, iluminação e paleta de cores sob medida.</p>
+                        <a href="#agendamento" class="btn-card">Saber Mais</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 (Adicionado) -->
+                <article class="card-servico">
+                    <div class="card-img-container">
+                        <img src="imagens/foto-4.jpg" alt="Plantas arquitetônicas e maquetes sobre a mesa" class="card-img">
+                    </div>
+                    <div class="card-info">
+                        <h3>CONSULTORIA EXPRESSA</h3>
+                        <p>Atendimento focado em soluções rápidas de reforma, arranjo espacial e decoração ágil.</p>
+                        <a href="#agendamento" class="btn-card">Saber Mais</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Seção 2: PACOTES DE PROJETO (3 Cards Verticais de Preço e Lista) -->
+        <section id="pacotes" class="secao-pacotes">
+            <h2 class="titulo-secao">PACOTES DE PROJETO</h2>
+            <div class="grid-pacotes">
+
+                <!-- Card Plano 1 -->
+                <article class="card-pacote">
+                    <h3>ESSENCIAL</h3>
+                    <p class="preco">R$ 1.800<span class="periodo">/ambiente</span></p>
+                    <ul class="features-lista">
+                        <li>Planta baixa 2D detalhada</li>
+                        <li>Guia de móveis e acabamentos</li>
+                        <li>Paleta de cores e texturas</li>
+                        <li>1 rodada de alterações inclusa</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-pacote">CONTRATAR</a>
+                </article>
+
+                <!-- Card Plano 2 -->
+                <article class="card-pacote">
+                    <h3>COMPLETO</h3>
+                    <p class="preco">R$ 3.500<span class="periodo">/ambiente</span></p>
+                    <ul class="features-lista">
+                        <li>Modelagem 3D fotorrealista</li>
+                        <li>Projeto luminotécnico e elétrico</li>
+                        <li>Detalhamento de marcenaria</li>
+                        <li>Visitas presenciais de acompanhamento</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-pacote">CONTRATAR</a>
+                </article>
+
+                <!-- Card Plano 3 (Adicionado) -->
+                <article class="card-pacote">
+                    <h3>TURNKEY PREMIUM</h3>
+                    <p class="preco">R$ 7.200<span class="periodo">/ambiente</span></p>
+                    <ul class="features-lista">
+                        <li>Gestão completa de obra e fornecedores</li>
+                        <li>Detalhamento executivo total</li>
+                        <li>Curadoria exclusiva de obras de arte</li>
+                        <li>Chave na mão com imóvel pronto para morar</li>
+                    </ul>
+                    <a href="#agendamento" class="btn-pacote">CONTRATAR</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Chamada para Ação Pré-Rodapé (CTA) -->
+        <section id="agendamento" class="secao-cta">
+            <h2>PRONTO PARA INICIAR SEU PROJETO?</h2>
+            <a href="#contato" class="btn-cta">SOLICITAR CONSULTORIA</a>
+        </section>
+    </main>
+
+    <!-- Rodapé (Navegação, Mídias Sociais e Direitos Autorais) -->
+    <footer id="contato" class="rodape">
+        <nav class="rodape-links">
+            <ul>
+                <li><a href="#inicio">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#legal">Termos de Uso</a></li>
+            </ul>
+        </nav>
+
+        <div class="rodape-sociais">
+            <a href="#" aria-label="Facebook" class="icone-social">Facebook</a>
+            <a href="#" aria-label="Instagram" class="icone-social">Instagram</a>
+            <a href="#" aria-label="Pinterest" class="icone-social">Pinterest</a>
+            <a href="#" aria-label="LinkedIn" class="icone-social">Linkedin</a>
+        </div>
+
+        <div class="rodape-texto">
+            <p>Vanguarda Arquitetura - Projetos que transformam ideias em espaços extraordinários.</p>
+            <p>&copy; 2026 Vanguarda Arquitetura & Design. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
